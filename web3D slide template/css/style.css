@@ -1,0 +1,212 @@
+/* TABLE OF CONTENT
+ 1 - RESET 
+ 2 - TYPOGRAPHY
+ 3 - HEADER 
+ 4 - NAVIGATION
+ 5 - SITE ELEMENTS
+*/
+
+
+/* 1 - RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+	color: #fff;
+    font-family: 'Arial',sans-serif;
+    font-size: 14px;
+	font-weight: 300;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+	background-color: #000;
+}
+
+img, a, ul, li {
+    border: none;
+    outline: none;
+}
+
+ol li, ul li {
+    list-style: none;
+}
+
+a:link, a:visited, a:active {
+    color: #2574a9;
+}
+
+:focus {
+	outline: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header, nav, section, article, footer {
+    display: block;
+}
+
+
+/* 2 - TYPOGRAPHY */
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 150%;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+strong {
+	font-weight: 700;
+}
+
+ul li,
+ol li {
+	list-style-position: inside !important;
+}
+
+
+/* 3 - HEADER */
+
+header {
+	position: fixed;
+	padding: 20px 0 30px 0;
+	height: 40px;
+	width: 100%;
+  top: 0;
+	z-index: 5;
+}
+
+	.header-dark {
+		background-color: #fff !important;
+	}
+
+	.header-clear:hover {
+		background: rgba(0,0,0,0.3);
+	}
+
+header.sticky:hover {
+	background: #000;
+}
+
+/* 4 - NAVIGATION */
+
+.main-menu {
+	float: right;
+	margin-right: 50px;
+}
+	
+.main-menu {
+	display: block;
+}
+	
+
+.main-menu ul {
+	height:	auto;
+}
+
+.main-menu li {
+	position: relative;
+	display: inline-block;
+    text-transform: uppercase;
+	list-style: none;
+	text-indent: inherit;
+}
+
+	.header-clear .main-menu li {
+		color: #fff;
+	}
+	
+	.header-dark .main-menu li {
+		color: #333;
+	}
+	
+.main-menu .menu-item-parent > a:before {
+	content: '\e114';
+	font-family: 'icomoon';
+	padding-right: 5px;
+	cursor: pointer;
+	font-size: 10px;
+}
+
+.main-menu li a {
+	height: 40px;
+	line-height: 40px;
+	font-weight: 700;
+	padding: 11.5px;
+}
+
+	.header-clear .main-menu li a {
+		color: #fff;
+	}
+	
+	.header-dark .main-menu li a {
+		color: #333;
+	}	
+
+	.header-clear .main-menu li:hover a {
+		background-color: #fff;
+	}
+	
+	.header-dark .main-menu li:hover a {
+		background-color: #333;
+		color: #fff;
+	}
+
+/* 5 - SITE ELEMENTS */
+#presenterInfo {
+  float: right;
+  text-align: right;
+  margin-top: 50px;
+  padding-right: 50px;
+  width: 450px;
+  height: 0px;
+  z-index: 1;
+}
+
+#title {
+  float: left;
+    width: auto;
+    margin: 15px 50px 0 15px;
+    color: #fff;
+  font-size: 22px;
+    font-family: "sony_sketch", Times, serif;
+}
+
+#web3d {
+	margin: auto;
+	z-index: -1;
+}
+

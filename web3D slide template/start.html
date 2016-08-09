@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="keywords" content= "3d,slides, web3d, power point," />
+    <meta name="description" content= " 3D Web Is Here" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="ico/favicon.ico" />
+
+    <title>TITLE GOES HERE</title>
+
+    <!-- CSS LIBS -->
+    <link href='css/style.css' rel='stylesheet' type="text/css">
+    <link href="css/x3dom.css" rel="stylesheet" type="text/css">
+
+    <!-- JS LIBS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.x3dom.org/download/x3dom.js"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <!-- MENU / LOGO -->
+
+    <header class="transit header-clear">
+
+        <nav class="main-menu">        
+            <ul>
+                <!-- THESE ARE THE BUTTONS THAT CONTROL THE CAMERA VIEWPOINTS -->
+                <li><button onclick="document.getElementById('startVP').setAttribute('set_bind','true');">Intro</button></li>
+                <li><button onclick="document.getElementById('slide1VP').setAttribute('set_bind','true');">1</button></li>
+                <li><button onclick="document.getElementById('slide2VP').setAttribute('set_bind','true');">2</button></li>
+                <li><button onclick="document.getElementById('slide3VP').setAttribute('set_bind','true');">3</button></li>
+                <li><button onclick="document.getElementById('slide4VP').setAttribute('set_bind','true');">4</button></li>
+                <li><button onclick="document.getElementById('slide5VP').setAttribute('set_bind','true');">5</button></li>
+                <li><button onclick="document.getElementById('slide6VP').setAttribute('set_bind','true');">6</button></li>
+                <li><button onclick="document.getElementById('slide7VP').setAttribute('set_bind','true');">7</button></li>
+                <li><button onclick="document.getElementById('slide8VP').setAttribute('set_bind','true');">8</button></li>
+                <li><button onclick="document.getElementById('slide9VP').setAttribute('set_bind','true');">9</button></li>
+                <li><button onclick="document.getElementById('slide10VP').setAttribute('set_bind','true');">10</button></li>
+                <li><button onclick="document.getElementById('slide11VP').setAttribute('set_bind','true');">11</button></li>
+                <li><button onclick="document.getElementById('slide12VP').setAttribute('set_bind','true');">12</button></li>
+                <li><button onclick="document.getElementById('slide13VP').setAttribute('set_bind','true');">13</button></li>
+                <li><button onclick="document.getElementById('slide14VP').setAttribute('set_bind','true');">14</button></li>
+                <li><button onclick="document.getElementById('slide15VP').setAttribute('set_bind','true');">15</button></li>
+                <li><button onclick="document.getElementById('slide16VP').setAttribute('set_bind','true');">16</button></li>
+                <li><button onclick="document.getElementById('slide17VP').setAttribute('set_bind','true');">17</button></li>
+                <li><button onclick="document.getElementById('slide18VP').setAttribute('set_bind','true');">18</button></li>
+                <li><button onclick="document.getElementById('slide19VP').setAttribute('set_bind','true');">19</button></li>
+                <li><button onclick="document.getElementById('slide20VP').setAttribute('set_bind','true');">20</button></li>
+                <li><button onclick="document.getElementById('slide21VP').setAttribute('set_bind','true');">21</button></li>
+                <li><button onclick="document.getElementById('slide22VP').setAttribute('set_bind','true');">22</button></li>
+                <li><button onclick="document.getElementById('slide23VP').setAttribute('set_bind','true');">23</button></li>
+                <li><button onclick="document.getElementById('slide24VP').setAttribute('set_bind','true');">24</button></li>
+                <li><button onclick="document.getElementById('slide25VP').setAttribute('set_bind','true');">25</button></li>
+                <li><button onclick="document.getElementById('slide26VP').setAttribute('set_bind','true');">26</button></li>
+                <li><button onclick="document.getElementById('slide27VP').setAttribute('set_bind','true');">27</button></li>
+                <li><button onclick="document.getElementById('slide28VP').setAttribute('set_bind','true');">28</button></li>
+                <li><button onclick="document.getElementById('slide29VP').setAttribute('set_bind','true');">29</button></li>
+                <li><button onclick="document.getElementById('slide30VP').setAttribute('set_bind','true');">30</button></li>
+
+            </ul>       
+        </nav>
+
+        <div id="title"><p><h1>PRESENTATION TITLE</h1></p></div>
+
+    </header>
+
+<!-- WEB3D -->
+    <div id='web3d'>
+        <x3d width='100%' height='600px'>
+            <Scene>
+<!-- NAV -->
+            <NavigationInfo bind='true' description='""' explorationMode=''all'' headlight='true' isActive='false' metadata='X3DMetadataObject' speed='1.0' transitionTime='1.0' transitionType='["LINEAR"]' type='' typeParams='[-0.4,60,0.05,2.8]' visibilityLimit='0.0' ></NavigationInfo> 
+
+            <X3DBindableNode bind='false' description='""' isActive='false' metadata='X3DMetadataObject' ></X3DBindableNode>
+
+<!-- VIEWPOINTS -->
+            <Viewpoint id="mainVP" position="0 0 -5" orientation="0 0 0 0" description="main VP"></Viewpoint>
+            <Viewpoint id="startVP" position="0 0 3" orientation="0 0 0 0" description="start VP"></Viewpoint>
+            <Viewpoint id="slide1VP" position="0 -2 8" orientation="0 0 0 0" description="slide 1"></Viewpoint>
+            <Viewpoint id="slide2VP" position="0 -4 13" orientation="0 0 0 0" description="slide 2"></Viewpoint>
+            <Viewpoint id="slide3VP" position="0 -6 18" orientation="0 0 0 0" description="slide 3"></Viewpoint>
+            <Viewpoint id="slide4VP" position="0 -8 23" orientation="0 0 0 0" description="slide 4"></Viewpoint>
+            <Viewpoint id="slide5VP" position="0 -10 28" orientation="0 0 0 0" description="slide 5"></Viewpoint>
+            <Viewpoint id="slide6VP" position="0 -12 33" orientation="0 0 0 0" description="slide 6"></Viewpoint>
+            <Viewpoint id="slide7VP" position="0 -14 38" orientation="0 0 0 0" description="slide 7"></Viewpoint>
+            <Viewpoint id="slide8VP" position="0 -16 43" orientation="0 0 0 0" description="slide 8"></Viewpoint>
+            <Viewpoint id="slide9VP" position="0 -18 48" orientation="0 0 0 0" description="slide 9"></Viewpoint>
+            <Viewpoint id="slide10VP" position="0 -20 53" orientation="0 0 0 0" description="slide 10"></Viewpoint>
+            <Viewpoint id="slide11VP" position="0 -22 58" orientation="0 0 0 0" description="slide 11"></Viewpoint>
+            <Viewpoint id="slide12VP" position="0 -24 63" orientation="0 0 0 0" description="slide 12"></Viewpoint>
+            <Viewpoint id="slide13VP" position="0 -26 68" orientation="0 0 0 0" description="slide 13"></Viewpoint>
+            <Viewpoint id="slide14VP" position="0 -28 73" orientation="0 0 0 0" description="slide 14"></Viewpoint>
+            <Viewpoint id="slide15VP" position="0 -30 78" orientation="0 0 0 0" description="slide 15"></Viewpoint>
+            <Viewpoint id="slide16VP" position="0 -32 83" orientation="0 0 0 0" description="slide 16"></Viewpoint>
+            <Viewpoint id="slide17VP" position="0 -34 88" orientation="0 0 0 0" description="slide 17"></Viewpoint>
+            <Viewpoint id="slide18VP" position="0 -36 93" orientation="0 0 0 0" description="slide 18"></Viewpoint>
+            <Viewpoint id="slide19VP" position="0 -38 98" orientation="0 0 0 0" description="slide 19"></Viewpoint>
+            <Viewpoint id="slide20VP" position="0 -40 103" orientation="0 0 0 0" description="slide 20"></Viewpoint>
+            <Viewpoint id="slide21VP" position="0 -42 108" orientation="0 0 0 0" description="slide 21"></Viewpoint>
+            <Viewpoint id="slide22VP" position="0 -44 113" orientation="0 0 0 0" description="slide 22"></Viewpoint>
+            <Viewpoint id="slide23VP" position="0 -46 118" orientation="0 0 0 0" description="slide 23"></Viewpoint>
+            <Viewpoint id="slide24VP" position="0 -48 123" orientation="0 0 0 0" description="slide 24"></Viewpoint>
+            <Viewpoint id="slide25VP" position="0 -50 128" orientation="0 0 0 0" description="slide 25"></Viewpoint>
+            <Viewpoint id="slide26VP" position="0 -52 133" orientation="0 0 0 0" description="slide 26"></Viewpoint>
+            <Viewpoint id="slide27VP" position="0 -54 138" orientation="0 0 0 0" description="slide 27"></Viewpoint>
+            <Viewpoint id="slide28VP" position="0 -56 143" orientation="0 0 0 0" description="slide 28"></Viewpoint>
+            <Viewpoint id="slide29VP" position="0 -58 148" orientation="0 0 0 0" description="slide 29"></Viewpoint>
+            <Viewpoint id="slide30VP" position="0 -60 153" orientation="0 0 0 0" description="slide 30"></Viewpoint>
+            <Viewpoint id="endVP" position="0 -62 158" orientation="0 0 0 0" description="end VP"></Viewpoint>
+
+
+<!-- LOGO -->
+            <Transform id='start' translation='0 0 -40'>
+                <Shape DEF='logo'>
+                    <Box size='35 35 0.1'></Box>
+                    <Appearance>
+                        <!-- INSERT SPLASH IMAGE HERE -->
+                        <ImageTexture url="img/SPLASH_IMAGE_HERE.jpg"><ImageTexture/>
+                    </Appearance>
+                </Shape>
+            </Transform> 
+
+<!-- SLIDES -->
+            <Transform id='slidePanel1' translation='0 0 0'>
+                <Shape>
+                    <!-- THIS DETERMINES THE SIZE OF YOUR INFO PANEL -->
+                    <Box DEF="slidePanel" size='3 2 .01'></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide01.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel2' translation='0 -2 5'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide02.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel3' translation='0 -4 10'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide03.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel4' translation='0 -6 15'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide04.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel5' translation='0 -8 20'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide05.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel6' translation='0 -10 25'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide06.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel7' translation='0 -12 30'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide07.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel8' translation='0 -14 35'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide08.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel9' translation='0 -16 40'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide09.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel10' translation='0 -18 45'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide10.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel11' translation='0 -20 50'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide11.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel12' translation='0 -22 55'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide12.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel13' translation='0 -24 60'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide13.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel14' translation='0 -26 65'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide14.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel15' translation='0 -28 70'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide15.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel16' translation='0 -30 75'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide16.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel17' translation='0 -32 80'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide17.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel18' translation='0 -34 85'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide18.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel19' translation='0 -36 90'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide19.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel20' translation='0 -38 95'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide20.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel21' translation='0 -40 100'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide21.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel22' translation='0 -42 105'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide22.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel23' translation='0 -44 110'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide23.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel24' translation='0 -46 115'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide24.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel25' translation='0 -48 120'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide25.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel26' translation='0 -50 125'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide26.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel27' translation='0 -52 130'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide27.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel28' translation='0 -54 135'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide28.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel29' translation='0 -56 140'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide29.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+            <Transform id='slidePanel30' translation='0 -58 145'>
+                <Shape>
+                    <Box USE="slidePanel"></Box>
+                    <Appearance>
+                    <ImageTexture url='slides/Slide30.jpg'></ImageTexture>
+                    </Appearance>
+                </Shape>
+            </Transform>
+
+<!-- INFO -->
+    <div id="presenterInfo">
+        <h4>PRESENTER NAME </h4>
+        <h4>CONTACT INFO</h4>
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+    
